@@ -11,6 +11,29 @@
     <body>
         <h1>Zendesk Widget (Classic)</h1>
 
+        <h2>Netlify form</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="student">Student</option>
+                <option value="mentor">Mentor</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          <p>*this form will email Zendesk channel</p>
+
         <!-- Start of nfatest2 Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4f21b9fa-d24a-4fe1-b8bf-19f259f6ca72"> </script>
         <!-- End of nfatest2 Zendesk Widget script -->
